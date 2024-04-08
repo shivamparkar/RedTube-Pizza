@@ -12,13 +12,23 @@ function Login() {
     console.log("Password:", password);
   };
 
+  const submitButton = document.getElementById('submitButton');
+
+submitButton.addEventListener('mouseover', function() {
+  this.textContent = 'Pizza Time 🍕';
+});
+
+submitButton.addEventListener('mouseout', function() {
+  this.textContent = 'Login';
+});
+
   return (
     <div className="login-wrapper">
       <div className="login-background"></div>
       <div className="login-box"> 
         <form onSubmit={handleSubmit}>
           <div className="input-group"> 
-            <label>Username</label>
+            <label>UserName</label>
             <input 
               type="text" 
               value={userName} 
@@ -33,7 +43,7 @@ function Login() {
               onChange={(e) => setPassword(e.target.value)} 
             />
           </div>
-          <button type="submit">
+          <button id="submitButton" type="submit">
             Login
           </button>
         </form>
