@@ -12,15 +12,16 @@ function CardList() {
   }, []);
 
   return (
-    <div>
-      {pizzas.map((pizza) => (
-        <div key={pizza.ID} className="card">
-          <img src='C:\Shivam\React\RedTube-Pizza\redtubepizza\public\Assets\vegCorn pizza.jpeg' alt={pizza.PizzaName} />
-          <h1>{pizza.PizzaName}</h1>
-          <p>{pizza.Description}</p>
-        </div>
-      ))}
-    </div>
+    <div className="card-container">
+    {pizzas.map((pizza) => (
+      <div key={pizza.ID} className="card">
+        <img src='/Assets/vegCorn pizza.jpeg' alt={pizza.PizzaName} />
+        <h1>{pizza.PizzaName}</h1>
+        <p>{pizza.Description}</p>
+      </div>
+    ))}
+  </div>
+  
   );
 }
 export default CardList;

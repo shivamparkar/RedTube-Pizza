@@ -1,7 +1,7 @@
 import './App.css';
 
 import CardList from './Component/CardList';
-
+import Footer from './Component/Footer';
 
 
 function App() {
@@ -9,10 +9,8 @@ function App() {
     <div className="App">
       
      <CardList></CardList>
-     <CardList></CardList>
-     <CardList></CardList>
-     <CardList></CardList>
-     
+     <Footer></Footer>
+    
     </div>
   );
 }
