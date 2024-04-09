@@ -12,15 +12,7 @@ function Login() {
     console.log("Password:", password);
   };
 
-  const submitButton = document.getElementById('submitButton');
-
-submitButton.addEventListener('mouseover', function() {
-  this.textContent = 'Pizza Time 🍕';
-});
-
-submitButton.addEventListener('mouseout', function() {
-  this.textContent = 'Login';
-});
+  
 
   return (
     <div className="login-wrapper">

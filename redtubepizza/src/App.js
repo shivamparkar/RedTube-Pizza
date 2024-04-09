@@ -1,13 +1,18 @@
 import './App.css';
-import Login from './Component/Login';
 
+import CardList from './Component/CardList';
 
 
 
 function App() {
   return (
     <div className="App">
-     <Login></Login>
+      
+     <CardList></CardList>
+     <CardList></CardList>
+     <CardList></CardList>
+     <CardList></CardList>
+     
     </div>
   );
 }

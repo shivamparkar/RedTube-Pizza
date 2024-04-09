@@ -1,14 +1,16 @@
 .login-box {
-    width: 23%;
-    margin: 119px auto;
+    width: 20%;
+    margin: 140px auto;
     border: 1px solid #ccc;
     padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 46vh;
+    height: 40vh;
     max-height: calc(100vh - 238px);
     overflow: hidden;
+    background-color: whitesmoke;
+    border-radius: 9%;
   }
   
   .input-group {
@@ -18,18 +20,22 @@
   .input-group label {
     display: block;
     margin-bottom: 10px;
-    color: white;
+    color: black;
+    
   }
   
   .input-group input {
     width: 93%;
     height: 19px;
     padding: 8px;
+    background-color: white;
+    background: rgb(254, 253, 255);
+    border-radius: 8px;
   }
   
   .login-wrapper {
     position: relative;
-    min-height: 80vh;
+    min-height: 70vh;
   }
   
   .login-background {
@@ -43,18 +49,19 @@
     background-position: center;
     z-index: -1;
     overflow: hidden;
+    
   }
   
   button[type="submit"] {
-    background-color: #007bff; /* Blue background color */
+    background-color: #3cc48b; /* Blue background color */
     color: #ffffff; /* White text color */
     border: none; /* Remove border */
     padding: 10px 20px; /* Add padding */
-    border-radius: 5px; /* Add rounded corners */
+    border-radius: 10px; /* Add rounded corners */
     cursor: pointer; /* Add cursor pointer on hover */
   }
   
   button[type="submit"]:hover {
-    background-color: #0056b3; /* Darker blue background color on hover */
+    background-color: #24b300; /* Darker blue background color on hover */
   }
   
